@@ -1,0 +1,19 @@
+<div class ="col-sm-12 container">
+<h2 class = "col-sm-4"> Andaman's Hut </h2>
+<p class = "col-sm-3 pull-right adjust"><input type ="text" [(ngModel)] = "searchterm" class = "radius" placefolder ="Search Events" /> </p>
+<div class = "clearfix"></div>
+<ng-container class = "col-sm-12" *ngIf = "(hotels | hotelFilter:searchterm) as result">
+<div class = "thumbnail col-sm-3" *ngFor = "let hotel of result">
+<img class = "img1" [src] = "hotel.img" />
+<h4 class = "text-center"> {{ hotel.Name }} </h4>
+<p class = "text-center"> {{ hotel.Location }} </p>
+<a routerLink = "/Booking" class = "btn btn-info"> {{ hotel.Book }} </a>
+</div>
+
+<div class = "col-sm-12" *ngIf = "result.length === 0">
+    <h4 class = "text-center top1"> No results Found ... </h4>
+</div>
+
+</ng-container>
+
+</div>

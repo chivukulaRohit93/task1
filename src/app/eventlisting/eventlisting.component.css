@@ -1,0 +1,27 @@
+.adjust{
+margin-top:25px;
+}
+
+.top1{
+margin-top:150px;
+}
+
+.thumbnail{
+height:300px;
+}
+
+.thumbnail:hover{
+box-shadow:2px 2px 2px #ddd;
+}
+
+.img1{
+width:250px;
+}
+
+.radius{
+border-radius:10px;
+}
+
+.btn-info{
+display:block;
+}
